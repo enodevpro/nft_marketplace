@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTF MarketPlace</title>
+
+    <link rel="stylesheet" href="./output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="border p-2 fixed top-0 left-0 w-full z-1000 bg-white">
+        <div
+          class="max-w-[1120px] h-[100px] mx-auto flex items-center justify-between"
+        >
+          <!-- logo and menu -->
+          <div class="flex items-center gap-3">
+            <a href="/" class="mr-16">
+              <img src="../public/images/logo.svg" alt="" />
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+              <a href="" class="font-bold text-sm text-[#23262f]">Discover</a>
+              <a href="" class="font-bold text-sm text-[#777e90]">
+                How it work</a
+              >
+            </div>
+          </div>
+          <!-- Search input -->
+
+          <div
+            class="hidden w-64 h-10 rounded-lg border-[#e6e8ec] border md:flex items-center justify-between p-4"
+          >
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline-none border-none text-[#7777e90]"
+            />
+
+            <!--  svg -->
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-[#777E90]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <!-- actions icons and buttons -->
+
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 flex items-center justify-center relative">
+              <div class="w-6 h-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="w-3 h-3 bg-[#45b26B] rounded-full absolute -top-0 -right-0"
+              ></div>
+            </div>
+
+            <button
+              class="px-4 py-3 rounded-full text-sm bg-[#3772FF] text-white whitespace-nowrap"
+            >
+              Upload
+            </button>
+            <button
+              class="px-4 py-3 rounded-full font-bold text-sm whitespace-nowrap border border-[#E6E8EC]"
+            >
+              Connect wallet
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Text intro -->
+
+      <div class="text-center mt-48 flex flex-col items-center gap-6">
+        <p class="text-[#777E90] font-bold text-sm">
+          CREATE,EXPLORE & COLLECT DIGITL ART NTFS
+        </p>
+        <h2 class="text-5xl font-bold text-[#23262F]">
+          The new creative economy.
+        </h2>
+
+        <button
+          class="px-8 py-4 border border-[#E6E8EC] rounded-full font-bold hover:bg-[#3772ff] transition duration-300 hover:text-white"
+        >
+          Start your search
+        </button>
+      </div>
+
+      <!-- hero section -->
+
+      <section
+        class="max-w-[1120px] mx-auto flex flex-col md:flex-row gap-32 mt-6 md:mt-32"
+      >
+        <img src="../public/images/hero-img.png" alt="" />
+        <div class="flex flex-col items-center">
+          <h3
+            class="text-6xl text-center md:text-start text-[#23262f] font-bold"
+          >
+            The creator network®
+          </h3>
+          <div class="flex items-center gap-8 mt-5">
+            <div class="flex items-center gap-2">
+              <img src="../public/images/user_1.png" alt="" class="w-10 h-10" />
+              <div>
+                <small class="text-[#7777e90]">Creator</small>
+                <p class="font-bold text-[#23262F]">Enrico Cole</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <img src="../public/images/eth-icon.png" alt="" />
+              <div>
+                <small class="text-[#777e90]">Instant price</small>
+                <p class="font-medium text-[#23262f]">2.5 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div
+            class="w-full rounded-3xl flex flex-col items-center mt-10 py-8 bg-[#EFF6FC]"
+          >
+            <span class="font-bold text-[#23262f]">Current bid</span>
+            <h2 class="font-bold text-5xl text-[#141416]">1.00 ETH</h2>
+            <p class="text-[#777E90] text-2xl font-medium">$4,453.53</p>
+
+            <div class="flex flex-col items-center mt-6">
+              <p>Auction ending in</p>
+              <div class="flex items-center gap-10 mt-5">
+                <div>
+                  <p class="text-3xl tetx-[#141416] font-bold">2</p>
+                  <p class="text-[#777e90] font-medium">hrs</p>
+                </div>
+
+                <div>
+                  <p class="text-3xl tetx-[#141416] font-bold">24</p>
+                  <p class="text-[#777e90] font-medium">mins</p>
+                </div>
+
+                <div>
+                  <p class="text-3xl tetx-[#141416] font-bold">13</p>
+                  <p class="text-[#777e90] font-medium">secs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full mt-10 flex flex-col items-center gap-3">
+            <button
+              class="w-full bg-[#3772FF] text-white font-bold px-6 py-4 rounded-full"
+            >
+              Place a bid
+            </button>
+            <button
+              class="w-full border bg-white text-blue-500 font-bold px-6 py-4 rounded-full"
+            >
+              View Item
+            </button>
+          </div>
+
+          <div class="flex items-center mt-5 gap-3">
+            <div
+              class="w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer"
+            >
+              <img src="../public/images/prev.png" alt="" />
+            </div>
+
+            <div
+              class="w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer"
+            >
+              <img src="../public/images/next.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feed section -->
+
+      <section
+        class="flex flex-col md:flex-row items-center gap-8 mt-32 pb-5 max-w-[1120px] mx-auto"
+      >
+        <!-- left -->
+        <div>
+          <img src="../public/images/coin-img.png" alt="" />
+          <div class="flex gap-2 mt-6 items-center justify-between">
+            <div class="flex items-center gap-2">
+              <img src="../public/images/user_1.png" alt="" />
+              <div>
+                <h2 class="text-[#23262f] text-2xl font-bold">
+                  The feature of ETH®
+                </h2>
+                <small class="text-[#353945] text-sm font-medium"
+                  >18 in stock</small
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 text-center">
+              <small class="text-[#777e90]">Highest bid</small>
+              <p class="border-2 border-[#45b26b] rounded-md px-2 py-1">
+                1.125 ETH
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- card -->
+            <div class="flex gap-6 items-start">
+              <img src="../public/images/coin_1.png" alt="" />
+              <div>
+                <p class="font-bold text-[#23262f] whitespace-nowrap">
+                  ETH never die
+                </p>
+                <div class="flex gap-2 items-center mt-2">
+                  <img
+                    src="../public/images/user_1.png"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span
+                    class="border-2 border-[#45b26b] text-sx whitespace-nowrap px-2 py-1 rounded-md"
+                    >0.26ETH</span
+                  >
+                  <span class="whitespace-nowrap text-[#7777e90] text-sm"
+                    >1 of 12</span
+                  >
+                </div>
+                <button
+                  class="px-4 py-2 rounded-full border border-[#e6e8ec] mt-4 transition duration-300 hover:bg-[#3772ff] hover:text-[#ffffff] text-sm hover:font-bold"
+                >
+                  Place a bid
+                </button>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <img src="../public/images/coin_1.png" alt="" />
+              <div>
+                <p class="font-bold text-[#23262f] whitespace-nowrap">
+                  ETH never die
+                </p>
+                <div class="flex gap-2 items-center mt-2">
+                  <img
+                    src="../public/images/user_1.png"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span
+                    class="border-2 border-[#45b26b] text-sx whitespace-nowrap px-2 py-1 rounded-md"
+                    >0.26ETH</span
+                  >
+                  <span class="whitespace-nowrap text-[#7777e90] text-sm"
+                    >1 of 12</span
+                  >
+                </div>
+                <button
+                  class="px-4 py-2 rounded-full border border-[#e6e8ec] mt-4 transition duration-300 hover:bg-[#3772ff] hover:text-[#ffffff] text-sm hover:font-bold"
+                >
+                  Place a bid
+                </button>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <img src="../public/images/coin_1.png" alt="" />
+              <div>
+                <p class="font-bold text-[#23262f] whitespace-nowrap">
+                  ETH never die
+                </p>
+                <div class="flex gap-2 items-center mt-2">
+                  <img
+                    src="../public/images/user_1.png"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span
+                    class="border-2 border-[#45b26b] text-sx whitespace-nowrap px-2 py-1 rounded-md"
+                    >0.26ETH</span
+                  >
+                  <span class="whitespace-nowrap text-[#7777e90] text-sm"
+                    >1 of 12</span
+                  >
+                </div>
+                <button
+                  class="px-4 py-2 rounded-full border border-[#e6e8ec] mt-4 transition duration-300 hover:bg-[#3772ff] hover:text-[#ffffff] text-sm hover:font-bold"
+                >
+                  Place a bid
+                </button>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <img src="../public/images/coin_1.png" alt="" />
+              <div>
+                <p class="font-bold text-[#23262f] whitespace-nowrap">
+                  ETH never die
+                </p>
+                <div class="flex gap-2 items-center mt-2">
+                  <img
+                    src="../public/images/user_1.png"
+                    alt=""
+                    class="w-6 h-6"
+                  />
+                  <span
+                    class="border-2 border-[#45b26b] text-sx whitespace-nowrap px-2 py-1 rounded-md"
+                    >0.26ETH</span
+                  >
+                  <span class="whitespace-nowrap text-[#7777e90] text-sm"
+                    >1 of 12</span
+                  >
+                </div>
+                <button
+                  class="px-4 py-2 rounded-full border border-[#e6e8ec] mt-4 transition duration-300 hover:bg-[#3772ff] hover:text-[#ffffff] text-sm hover:font-bold"
+                >
+                  Place a bid
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="mt-5 px-4 py-2 rounded-full border border-[#e6e8ec] flex items-center gap-2"
+          >
+            Discover more
+            <img src="../public/images/next.png" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Populat section -->
+      <section class="bg-[#F4F5F6] p-3">
+        <div class="max-w-[1120px] mx-auto mt-32 pb-10">
+          <div class="flex items-center justify-between pt-8">
+            <p class="text-[#777E90] font-bold text-xl">Popular</p>
+            <select
+              class="w-64 h-12 px-4 border-2 border-[#E6E8EC] rounded-md bg-gray-100 text-gray-700 focus:outline-none"
+            >
+              <option value="">Today</option>
+              <option value="">Last 7 days</option>
+              <option value="">Last 28 days</option>
+            </select>
+          </div>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-4 gap-8"
+          >
+            <!-- card item -->
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+              <div class="flex iems-center justify-between">
+                <span
+                  class="bg-[#377dff] w-8 h-8 flex items-center justify-center rounded-full text-white text-sx font-medium"
+                  >#1</span
+                >
+                <div class="flex items-center">
+                  <img src="../public/images/access.png" alt="" />
+                </div>
+              </div>
+
+              <hr class="mt-6" />
+
+              <div class="flex items-center flex-col gap-3 mt-6">
+                <img
+                  src="../public/images/user_2.png"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-[#23262f] font-bold text-center">Edd Harris</h3>
+
+                <p class="text-xs text-center">
+                  <span class="font-bold">2.456</span>
+                  <span class="font-bold text-[#777e90]">ETH</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- card item -->
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+              <div class="flex iems-center justify-between">
+                <span
+                  class="bg-gray-500 w-8 h-8 flex items-center justify-center rounded-full text-white text-sx font-medium"
+                  >#2</span
+                >
+                <div class="flex items-center">
+                  <img src="../public/images/access.png" alt="" />
+                </div>
+              </div>
+
+              <hr class="mt-6" />
+
+              <div class="flex items-center flex-col gap-3 mt-6">
+                <img
+                  src="../public/images/user_3.png"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-[#23262f] font-bold text-center">Odell Hane</h3>
+
+                <p class="text-xs text-center">
+                  <span class="font-bold">2.456</span>
+                  <span class="font-bold text-[#777e90]">ETH</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- card item -->
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+              <div class="flex iems-center justify-between">
+                <span
+                  class="bg-gray-500 w-8 h-8 flex items-center justify-center rounded-full text-white text-sx font-medium"
+                  >#3</span
+                >
+                <div class="flex items-center">
+                  <img src="../public/images/access.png" alt="" />
+                </div>
+              </div>
+
+              <hr class="mt-6" />
+
+              <div class="flex items-center flex-col gap-3 mt-6">
+                <img
+                  src="../public/images/user_4.png"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-[#23262f] font-bold text-center">Edd Harris</h3>
+
+                <p class="text-xs text-center">
+                  <span class="font-bold">2.456</span>
+                  <span class="font-bold text-[#777e90]">ETH</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- card item -->
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+              <div class="flex iems-center justify-between">
+                <span
+                  class="bg-gray-500 w-8 h-8 flex items-center justify-center rounded-full text-white text-sx font-medium"
+                  >#4</span
+                >
+                <div class="flex items-center">
+                  <img src="../public/images/access.png" alt="" />
+                </div>
+              </div>
+
+              <hr class="mt-6" />
+
+              <div class="flex items-center flex-col gap-3 mt-6">
+                <img
+                  src="../public/images/user_5.png"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-[#23262f] font-bold text-center">Edd Harris</h3>
+
+                <p class="text-xs text-center">
+                  <span class="font-bold">2.456</span>
+                  <span class="font-bold text-[#777e90]">ETH</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- card item -->
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+              <div class="flex iems-center justify-between">
+                <span
+                  class="bg-gray-500 w-8 h-8 flex items-center justify-center rounded-full text-white text-sx font-medium"
+                  >#5</span
+                >
+                <div class="flex items-center">
+                  <img src="../public/images/access.png" alt="" />
+                </div>
+              </div>
+
+              <hr class="mt-6" />
+
+              <div class="flex items-center flex-col gap-3 mt-6">
+                <img
+                  src="../public/images/user_6.png"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-[#23262f] font-bold text-center">Edd Harris</h3>
+
+                <p class="text-xs text-center">
+                  <span class="font-bold">2.456</span>
+                  <span class="font-bold text-[#777e90]">ETH</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="mt-5 px-12 py-2 rounded-full bg-[#3772ff] text-white font-bold shadow-lg"
+          >
+            View all
+          </button>
+        </div>
+      </section>
+
+      <!-- Hot bid section -->
+
+      <section class="mt-20 max-w-[1120px] mx-auto p-3">
+        <div class="flex items-center justify-between">
+          <h2 class="text-3xl font-bold">Hot bid</h2>
+
+          <div class="flex items-center gap-2">
+            <button
+              class="w-10 h-10 border rounded-full flex items-center justify-center"
+            >
+              <img src="../public/images/prev.png" alt="" />
+            </button>
+
+            <button
+              class="w-10 h-10 border rounded-full flex items-center justify-center"
+            >
+              <img src="../public/images/next.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- list -->
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-16 gap-8">
+          <!-- card item -->
+
+          <div>
+            <img src="../public/images/bid_2.png" alt="" class="rounded-lg" />
+            <div class="mt-5 flex items-center justify-between">
+              <h2 class="font-medium text-[#23262f]">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45b26b] text-sm font-bold px-2 py-1 border-2 border-[#45b26b] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+
+            <hr class="mt-5" />
+
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-xs text-[#777E90]">Highest bid</span>
+                  0.001ETH
+                </p>
+              </div>
+
+              <p class="text-xs text-[#777E90]">New bid 🔥</p>
+            </div>
+          </div>
+
+          <!-- card item -->
+
+          <div>
+            <img src="../public/images/bid_3.png" alt="" class="rounded-lg" />
+            <div class="mt-5 flex items-center justify-between">
+              <h2 class="font-medium text-[#23262f]">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45b26b] text-sm font-bold px-2 py-1 border-2 border-[#45b26b] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+
+            <hr class="mt-5" />
+
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-xs text-[#777E90]">Highest bid</span>
+                  0.001ETH
+                </p>
+              </div>
+
+              <p class="text-xs text-[#777E90]">New bid 🔥</p>
+            </div>
+          </div>
+
+          <!-- card item -->
+
+          <div>
+            <img src="../public/images/bid_1.png" alt="" class="rounded-lg" />
+            <div class="mt-5 flex items-center justify-between">
+              <h2 class="font-medium text-[#23262f]">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45b26b] text-sm font-bold px-2 py-1 border-2 border-[#45b26b] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+
+            <hr class="mt-5" />
+
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-xs text-[#777E90]">Highest bid</span>
+                  0.001ETH
+                </p>
+              </div>
+
+              <p class="text-xs text-[#777E90]">New bid 🔥</p>
+            </div>
+          </div>
+
+          <!-- card item -->
+
+          <div>
+            <img src="../public/images/bid_3.png" alt="" class="rounded-lg" />
+            <div class="mt-5 flex items-center justify-between">
+              <h2 class="font-medium text-[#23262f]">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45b26b] text-sm font-bold px-2 py-1 border-2 border-[#45b26b] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+
+            <hr class="mt-5" />
+
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-xs text-[#777E90]">Highest bid</span>
+                  0.001ETH
+                </p>
+              </div>
+
+              <p class="text-xs text-[#777E90]">New bid 🔥</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hot collections -->
+
+      <section class="bg-[#F4F5F6] mt-20 p-3">
+        <div class="max-w-[1120px] mx-auto pt-20">
+          <h2 class="text-3xl font-bold">Hot collections</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 items-center mt-16 gap-8">
+            <!-- card item -->
+
+            <div class="flex flex-col w-full justify-between">
+              <img
+                src="../public/images/hot_collection_1.png"
+                alt=""
+                class="rounded-lg"
+              />
+              <div class="flex items-center gap-2 mt-2">
+                <img
+                  src="../public/images/img_c_1.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <img
+                  src="../public/images/img_c_2.png"
+                  alt=""
+                  class="rounded-lg"
+                /><img
+                  src="../public/images/img_c_3.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+              </div>
+
+              <div class="mt-4">
+                <h2 class="text-2xl font-bold text-[#23262f]">
+                  Awesome collections
+                </h2>
+                <div class="flex items-center justify-between mt-2">
+                  <div class="flex items-center gap-5">
+                    <img src="../public/images/user_1.png" alt="" />
+                    <p>
+                      By
+                      <span class="font-bold text-[#353945]"
+                        >Kennith Olson</span
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-sm border px-4 py-2">28 items</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col w-full justify-between">
+              <img
+                src="../public/images/hot_collection_2.png"
+                alt=""
+                class="rounded-lg"
+              />
+              <div class="flex items-center gap-2 mt-2">
+                <img
+                  src="../public/images/img_c_4.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <img
+                  src="../public/images/img_c_5.png"
+                  alt=""
+                  class="rounded-lg"
+                /><img
+                  src="../public/images/img_c_6.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+              </div>
+
+              <div class="mt-4">
+                <h2 class="text-2xl font-bold text-[#23262f]">
+                  Awesome collections
+                </h2>
+                <div class="flex items-center justify-between mt-2">
+                  <div class="flex items-center gap-5">
+                    <img src="../public/images/user_1.png" alt="" />
+                    <p>
+                      By
+                      <span class="font-bold text-[#353945]"
+                        >Kennith Olson</span
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-sm border px-4 py-2">28 items</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col w-full justify-between">
+              <img
+                src="../public/images/hot_collection_3.png"
+                alt=""
+                class="rounded-lg"
+              />
+              <div class="flex items-center gap-2 mt-2">
+                <img
+                  src="../public/images/img_c_7.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+                <img
+                  src="../public/images/img_c_8.png"
+                  alt=""
+                  class="rounded-lg"
+                /><img
+                  src="../public/images/img_c_9.png"
+                  alt=""
+                  class="rounded-lg"
+                />
+              </div>
+
+              <div class="mt-4">
+                <h2 class="text-2xl font-bold text-[#23262f]">
+                  Awesome collections
+                </h2>
+                <div class="flex items-center justify-between mt-2">
+                  <div class="flex items-center gap-5">
+                    <img src="../public/images/user_1.png" alt="" />
+                    <p>
+                      By
+                      <span class="font-bold text-[#353945]"
+                        >Kennith Olson</span
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-sm border px-4 py-2">28 items</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discover section -->
+
+      <section class="mt-20 max-w-[1120px] mx-auto p-3">
+        <h2 class="text-3xl font-bold">Discover Collections</h2>
+
+        <div
+          class="mt-20 flex flex-col gap-5 items-start md:flex-row md:items-center justify-between"
+        >
+          <select
+            class="w-full md:w-64 h-12 px-4 border-2 border-[#e6e8ec] rounded-md bg-gray-100 text-gray-700 focus:outline-none"
+          >
+            <option value="">Todays</option>
+            <option value="">Last 7 days</option>
+            <option value="">Last 28 days</option>
+          </select>
+
+          <div class="flex items-center gap-5">
+            <p
+              class="bg-[#353945] px-3 py-2 rounded-full text-white text-sm font-bold cursor-pointer"
+            >
+              All items
+            </p>
+            <p class="text-[#777E90] font-medium">Art</p>
+            <p class="text-[#777E90] font-medium">Game</p>
+            <p class="text-[#777E90] font-medium">Photography</p>
+            <p class="text-[#777E90] font-medium">Music</p>
+            <p class="text-[#777E90] font-medium">Video</p>
+          </div>
+          <button
+            class="px-5 py-2 rounded-full text-white font-bold bg-[#3773ff]"
+          >
+            Filter
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-8">
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_10.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_17.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_16.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_15.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_14.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_13.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_12.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card item -->
+          <div>
+            <img src="../public/images/img_c_11.png" alt="" />
+            <div class="flex items-center justify-between mt-5">
+              <h2 class="text-[#23262f] font-medium">Amazing digital art</h2>
+              <p
+                class="whitespace-nowrap text-[#45B26B] text-xs font-bold px-2 py-1 border-2 border-[#45B26B] rounded-lg"
+              >
+                2.45 ETH
+              </p>
+            </div>
+            <hr class="mt-5" />
+            <div class="mt-2 flex items-center justify-between">
+              <div class="flex items-center gap-1">
+                <img src="../public/images/highest.png" alt="" />
+                <p class="font-bold">
+                  <span class="text-[#777e90] text-xs">Highest bid</span>
+                  0.001 ETH
+                </p>
+                <p class="text-xs text-[#777e90]">New bid 🔥</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section
+        class="p-5 max-w-[1120px] mx-auto flex flex-col md:flex-row gap-10 items-center justify-center mt-32"
+      >
+        <div>
+          <p class="font-bold text-[#777e90]">Save your time with Stacks</p>
+          <h2 class="text-6xl text-[#23262f] font-bold">
+            Earn free crypto with Crypter
+          </h2>
+          <p class="text-[#777e90] mt-5">
+            A creative agency that lead and inspire
+          </p>
+
+          <div class="mt-9 flex items-center gap-2">
+            <button
+              class="px-6 py-2 border bg-[#3772ff] text-white rounded-full font-medium"
+            >
+              Earn now
+            </button>
+            <button class="px-6 py-2 border rounded-full font-medium">
+              Discover more
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <img src="../public/images/cta-img.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-33 bg-gray-100 cursor-pointer p-5">
+        <div class="max-w-[1120px] mx-auto flex flex-col md:flex-row pt-10">
+          <div class="md:mr-[130px]">
+            <img src="../public/images/logo.svg" alt="" />
+            <p class="mt- 8 text-2xl">The New Creative Economy.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <h2 class="text-[#23262F] font-medium">Crypher</h2>
+              <div class="flex flex-col gap-6 mt-10 whitespace-nowrap">
+                <a href="">Discover</a>
+                <a href="">Connect wallet</a>
+                <a href="">Create item</a>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-[#23262F] font-medium">Info</h2>
+              <div class="flex flex-col gap-6 mt-10 whitespace-nowrap">
+                <a href="">How it work</a>
+                <a href="">Review</a>
+                <a href="">Testing</a>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="text-[#23262F] font-medium">Join Newsletter</h2>
+
+              <p class="mt-2 text-gray-600">
+                Subscribe our newsletter to get more free design course and
+                resource
+              </p>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="mt-2 w-full h-12 px-4 rounded-full border border-gray-200 focus:outline-none focus:border-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
